@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /css/
+Disallow: /js/
+Disallow: /404.html
+
+Sitemap: https://www.drrafaelandrade.com.br/sitemap.xml 
