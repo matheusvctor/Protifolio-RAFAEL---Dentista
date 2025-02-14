@@ -1,0 +1,253 @@
+:root {
+    --color-primary: #8B4513;
+    --color-primary-light: #A0522D;
+    --color-primary-dark: #5C2E0E;
+    --color-secondary: #F5F5DC;
+    --color-text: #2C3E50;
+    --color-text-light: #34495E;
+    --color-white: #FFFFFF;
+    --color-gray: #666666;
+    --color-cream: #FAEBD7;
+    --color-bg: #F8F9FA;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --max-width: 1200px;
+    --padding-x: 2rem;
+    --border-radius: 12px;
+}
+
+body {
+    color: var(--color-text);
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    background: var(--color-bg);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem var(--padding-x);
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    backdrop-filter: blur(10px);
+}
+
+section {
+    position: relative;
+    padding: 6rem 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.75rem;
+    margin-bottom: 3rem;
+    color: var(--color-primary-dark);
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, var(--color-primary), var(--color-primary-light));
+    margin: 1.5rem auto;
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: var(--color-text-light);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1.2rem 2.5rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    color: var(--color-white);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: var(--shadow-md);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary));
+}
+
+/* Efeitos modernos */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: var(--transition);
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Scroll personalizado */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 6px;
+    border: 3px solid var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-light);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    :root {
+        --padding-x: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --padding-x: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+
+    .container {
+        padding: 1.5rem var(--padding-x);
+    }
+}
+
+/* Background Wrapper */
+.background-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: linear-gradient(135deg, 
+        rgba(139, 69, 19, 0.05) 0%, 
+        rgba(160, 82, 45, 0.08) 50%, 
+        rgba(250, 235, 215, 0.05) 100%
+    );
+    overflow: hidden;
+}
+
+.background-wrapper svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    pointer-events: none;
+    will-change: transform;
+    opacity: 0.8;
+}
+
+/* Efeito de blur para cards */
+.card-blur {
+    filter: blur(2px);
+    opacity: 0.7;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+/* Estilo do header quando rola */
+.header-scrolled {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para campos de formulário com erro */
+.form-group input.error,
+.form-group textarea.error {
+    border-color: #ff4444;
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+/* Efeitos de hover aprimorados */
+.floating-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: block;
+    pointer-events: none;
+    z-index: -1;
+} 

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Rafael Andrade - Odontologia</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+    <script src="js/carousel.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Dr. Rafael Andrade</h1>
+            <button class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#timeline">Trajetória</a></li>
+                    <li><a href="#certificados">Certificados</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre" class="about">
+            <div class="background-wrapper">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:rgba(139, 69, 19, 0.4)"></stop>
+                            <stop offset="50%" style="stop-color:rgba(160, 82, 45, 0.5)"></stop>
+                            <stop offset="100%" style="stop-color:rgba(250, 235, 215, 0.6)"></stop>
+                        </linearGradient>
+                        <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+                    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+                    </defs>
+                    <g>
+                        <use xlink:href='#wave' opacity=".7">
+                            <animateTransform
+                                attributeName="transform"
+                                attributeType="XML"
+                                type="translate"
+                                dur="10s"
+                                calcMode="spline"
+                                values="270 230; -334 180; 270 230"
+                                keyTimes="0; .5; 1"
+                                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                                repeatCount="indefinite" />
+                        </use>
+                        <use xlink:href='#wave' opacity=".9">
+                            <animateTransform
+                                attributeName="transform"
+                                attributeType="XML"
+                                type="translate"
+                                dur="8s"
+                                calcMode="spline"
+                                values="-270 230;243 220;-270 230"
+                                keyTimes="0; .6; 1"
+                                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                                repeatCount="indefinite" />
+                        </use>
+                        <use xlink:href='#wave' opacity="1">
+                            <animateTransform
+                                attributeName="transform"
+                                attributeType="XML"
+                                type="translate"
+                                dur="6s"
+                                calcMode="spline"
+                                values="0 230;-140 200;0 230"
+                                keyTimes="0; .4; 1"
+                                keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                                repeatCount="indefinite" />
+                                
+                        </use>
+                    </g>
+                </svg>
+            </div>
+            <div class="container">
+                <h2>Sobre Dr. Rafael Andrade</h2>
+                <div class="about-content">
+                    <div class="profile-image">
+                        <img src="profile/profile.jpg" alt="Dr. Rafael Andrade">
+                    </div>
+                    <div class="about-text">
+                        <p>Sou um jovem profissional recém-formado em Odontologia, apaixonado pela área da saúde e pelo cuidado com as pessoas. Durante minha graduação, participei ativamente de monitorias e apresentações acadêmicas, buscando sempre expandir meus conhecimentos. Atualmente, estou iniciando uma nova etapa em minha jornada profissional com a pós-graduação em Implantodontia, visando oferecer um atendimento cada vez mais qualificado e atualizado aos meus futuros pacientes.</p>
+                        <ul class="credentials">
+                            <li>Graduação em Odontologia - 2025</li>
+                            <li>Iniciando Pós-graduação em Implantodontia</li>
+                            <li>Monitor de Endodontia 2023-2024</li>
+                            <li>Experiência em Apresentações Acadêmicas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="services">
+            <div class="container">
+                <h2>Nossos Serviços</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Implantes Dentários</h3>
+                        <p>Recupere seu sorriso com implantes de alta qualidade</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Clareamento Dental</h3>
+                        <p>Tenha um sorriso mais branco e radiante</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Ortodontia</h3>
+                        <p>Alinhamento dental com técnicas modernas</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Estética Dental</h3>
+                        <p>Transforme seu sorriso com procedimentos estéticos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline-section">
+            <div class="container">
+                <h2>Minha Trajetória</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2020</span>
+                            <div class="timeline-dot"></div>
+                            <h3>Início da Jornada Acadêmica</h3>
+                            <p>Ingresso no curso de Odontologia, dando início à minha formação profissional.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022</span>
+                            <div class="timeline-dot"></div>
+                            <h3>Primeiras Apresentações</h3>
+                            <p>Início das participações em eventos universitários com apresentação de trabalhos sobre diversos temas da odontologia.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023.1 - 2024.1</span>
+                            <div class="timeline-dot"></div>
+                            <h3>Monitoria em Endodontia</h3>
+                            <p>Atuação como monitor de endodontia laboratorial e clínica, contribuindo para a formação de outros estudantes.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024.2</span>
+                            <div class="timeline-dot"></div>
+                            <h3>Desenvolvimento Profissional</h3>
+                            <p>Participação em cursos, congressos externos e organização de eventos acadêmicos, além de continuar com apresentações de trabalhos.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2025.1</span>
+                            <div class="timeline-dot"></div>
+                            <h3>Nova Fase</h3>
+                            <p>Conclusão da graduação e início da pós-graduação em Implantodontia, buscando especialização e excelência profissional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificados" class="certificates-section">
+            <div class="container">
+                <h2>Certificações e Conquistas</h2>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="certificados/1.jpg" alt="Certificado">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="certificados/2.png" alt="Certificado">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="certificados/3.jpg" alt="Certificado">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="certificados/4.jpg" alt="Certificado">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="certificados/5.jpg" alt="Certificado">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="certificados/7.jpg" alt="Certificado">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="certificados/8.jpg" alt="Certificado">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="certificados/9.png" alt="Certificado">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="certificados/10.png" alt="Certificado">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="certificados/11.jpg" alt="Certificado">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="certificados/12.jpg" alt="Certificado">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-button prev">←</button>
+                        <button class="carousel-button next">→</button>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact">
+            <div class="container">
+                <h2>Duvidas</h2>
+                <div class="contact-content">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Seu Nome">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Seu E-mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required placeholder="Seu Telefone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder="Sua Mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Enviar Mensagem</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        <p><strong>Telefone:</strong> (XX) XXXX-XXXX</p>
+                        <p><strong>E-mail:</strong> contato@drrafa.com.br</p>
+                        <p><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dr. Rafael Andrade - Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html> 
